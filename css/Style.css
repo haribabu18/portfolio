@@ -1,0 +1,319 @@
+@import url(utility.css);
+
+:root{
+    --primary: black;
+    --pure: white;
+    --secondary: grey;
+    --heighlight: #08fdd8
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'cursivestyle';
+    src: url('fonts/Reey.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Headings';
+    src: url(fonts/TT\ Norms\ Pro\ Bold.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Normaltext';
+    src: url(fonts/TT\ Norms\ Pro\ Regular.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+.name {
+    font-family: cursivestyle,sans-serif;
+    color: cornsilk;
+}
+.right{
+    font-family: Headings;
+}
+/* styles */
+
+body
+{
+    background: var(--primary);
+    background-image: url("/Images/designpattern.svg");
+    background-size:auto ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialised;
+}
+
+lottie-player{
+    width: 50%;
+    margin: 10% auto;
+}
+
+.container-nav{
+    max-width: 3840px;
+    margin: 0 auto;
+    background: var(--primary);
+} 
+header{
+    z-index: 2000;
+}
+header nav .right a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+header nav{
+    
+    padding: 0 15px;
+    padding: 2rem 0;
+    background: var(--primary);
+}
+
+header nav .branding{
+    margin-left: 1rem;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.increase-height{
+    margin-top: 7rem;
+}
+
+
+
+
+/*home text 1*/
+
+.home-text1{
+    margin-left: 2rem;
+}
+
+h2{
+    font-size: 5rem;
+    color: var(--pure);
+    font-family: Headings;
+}
+h2:hover{
+    color: var(--heighlight);
+}
+
+
+
+
+
+/*home text 2*/
+
+.home-text2{
+    margin-top: -2.7rem;
+    margin-left: 2rem;
+}
+
+.home-text{
+    height: 65vh;
+    margin-left: 5vw;
+    overflow-x: hidden;
+    align-items: center;
+    display: -webkit-box;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+}
+
+h1{
+    color: #fff;
+    margin-left:-0.4rem;
+    font-family: Headings;
+    font-size: 10.3rem;
+}
+
+h1:hover{
+    color: var(--heighlight);
+}
+h3{
+    
+    color: var(--heighlight);
+    margin-left:-0.4rem;
+    font-family: Headings;
+    font-size: 10.3rem;
+}
+
+h3:hover{
+    color: red;
+}
+.space-h1{
+    width: 1.5rem;
+}
+
+
+
+
+
+
+/*home text 3*/
+
+.home-text3{
+    margin-left: 2rem;
+    margin-top: -2.2rem;
+}
+
+h5{
+    font-size: 2.45rem;
+    color: var(--pure);
+    font-family: Headings;
+}
+h5:hover{
+    color: var(--heighlight);
+}
+.space-h5{
+    width: 1rem;
+}
+
+
+
+
+
+
+/*home text 4*/
+
+pre{
+    font-size: 1.3rem;
+    color: var(--secondary);
+    font-family: 'La Belle Aurore', cursive;
+}
+pre:hover{
+    color: darkgrey;
+}
+.profession{
+    color: var(--heighlight);
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    font-family: Normaltext;
+}
+.profession:hover{
+    color: red;
+}
+
+
+
+/*container myself*/
+.container-myself{
+    margin-top: 20px;
+}
+
+.myself-text{
+    height: 60vh;
+    margin-left: 5vw;
+    overflow: hidden;
+    display: -webkit-box;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.about-me{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: var(--secondary);
+    font-family: Normaltext;
+}
+.about-me a{
+    color: var(--heighlight);
+    text-decoration: none;
+}
+.myself-picture{
+    width: calc(50%);
+    float: right;
+}
+.myself-box1{
+    width: calc(50%);
+}
+
+
+/*skills*/
+
+.skills-text{
+    height: 60vh;
+    margin-left: 5vw;
+    height: fit-content;
+    display: -webkit-box;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.my-skills{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: var(--secondary);
+    font-family: Normaltext;
+}
+.skills-details{
+    width: calc(50%);
+    padding: 2rem;
+}
+.skills-box1{
+    width: calc(50%);
+}
+.skills-data{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .2rem;
+    background-color: rgb(32, 32, 32);
+}
+.skill-bar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 4.2rem;
+    background-color: var(--heighlight);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: -10;
+}
+.java-skill{
+    width: 85%;
+}
+.uiux-skill{
+    width: 90%;
+}
+.css-skill{
+    width: 80%;
+}
+.html-skill{
+    width: 80%;
+}
+.javascript-skill{
+    width: 75%;
+}
+
+/**/
+
+.mywork-text{
+    margin-left: 5vw;
+    height: fit-content;
+    /* width: calc(100%); */
+}
+.mywork-box1{
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loader{
+    background-color: #000;
+}
+.content{
+    display: none;
+}
